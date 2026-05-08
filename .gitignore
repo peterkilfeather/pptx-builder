@@ -1,0 +1,7 @@
+output/*.pptx
+output/*.pdf
+*.pdf
+*.jpg
+__pycache__/
+*.pyc
+.DS_Store
