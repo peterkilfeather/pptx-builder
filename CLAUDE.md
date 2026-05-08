@@ -1,12 +1,12 @@
-# Alex's PowerPoint Builder
+# PowerPoint Builder
 
-This project generates polished .pptx presentations from natural language descriptions using `python-pptx`. Alex describes what he wants in Claude Code chat and gets an editable deck back.
+This project generates polished .pptx presentations from natural language descriptions using `python-pptx`. The user describes what they want in Claude Code chat and gets an editable deck back.
 
 ## Workflow
 
 ### 1. Read the Style Guide First
 
-Before generating any deck, read `references/style_guide.md` — it captures Alex's design preferences extracted from his example slides (colors, fonts, layouts, diagram styles).
+Before generating any deck, read `references/style_guide.md` — it captures design preferences extracted from example slides (colors, fonts, layouts, diagram styles).
 
 ### 2. Analyze the Template
 
@@ -20,7 +20,7 @@ Extract the template's slide layouts, color scheme, and fonts. Use these when ad
 ### 3. Generate the Presentation
 
 Use `python-pptx` to:
-- Open Alex's template from `templates/`
+- Open the template from `templates/`
 - Add content slides using the template's existing slide layouts
 - Build diagrams as **native PowerPoint shapes** (never embed diagrams as images)
 - Save to `output/`
@@ -50,7 +50,7 @@ Inspect every slide image. Fix any overlapping elements, cut-off text, uneven sp
 
 ### 5. Iterate
 
-After delivering the first draft, ask Alex what to change. Common requests:
+After delivering the first draft, ask the user what to change. Common requests:
 - Resize/recolor diagram shapes
 - Rearrange slide order
 - Add/remove slides
@@ -89,7 +89,7 @@ After delivering the first draft, ask Alex what to change. Common requests:
 ## Project Structure
 
 ```
-templates/     — Alex's .pptx template(s)
+templates/     — .pptx template(s)
 references/    — Example slides + style_guide.md
 output/        — Generated presentations
 diagram_helpers.py — Reusable diagram generation functions
